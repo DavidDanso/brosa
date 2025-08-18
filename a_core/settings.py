@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-x8_3_h)=s^eyiaigp40w!g-(w_racsote$2drs@k1^2@8iz*qg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['brosa.ai', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['brosa.ai', '127.0.0.1', 'localhost', '*.brosa.ai']
 CSRF_TRUSTED_ORIGINS = [ 'https://*' ]
 
 
