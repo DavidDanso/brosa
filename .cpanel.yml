@@ -1,0 +1,41 @@
+---
+deployment:
+  tasks:
+    # Set deployment path
+    - export DEPLOYPATH=/home/brosxxyob/public_html/brosa_app
+
+    # Copy all files to deployment directory
+    - /bin/cp -R * $DEPLOYPATH
+
+    # Navigate to deployment directory
+    - cd $DEPLOYPATH
+
+    # Install Python dependencies using Python 3.9
+    - python3.9 -m pip install --user -r requirements.txt
+
+    # Create passenger_wsgi.py if it doesn't exist
+    - |
+      if [ ! -f passenger_wsgi.py ]; then
+        cat > passenger_wsgi.py << 'EOF'
+      import os
+      import sys
+      import django
+      from django.core.wsgi import get_wsgi_application
+
+      sys.path.insert(0, os.path.dirname(__file__))
+      os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'a_core.settings')
+
+      django.setup()
+      application = get_wsgi_application()
+      EOF
+      fi
+
+    # Collect static files
+    - python3.9 manage.py collectstatic --noinput --clear
+
+    # Run database migrations
+    - python3.9 manage.py migrate --noinput
+
+    # Set proper permissions
+    - find $DEPLOYPATH -type f -exec chmod 644 {} \;
+    - find $DEPLOYPATH -type d -exec chmod 755 {} \;

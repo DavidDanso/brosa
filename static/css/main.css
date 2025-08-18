@@ -218,10 +218,10 @@ a:hover {
 }
 #hero h6 {
   font-family: var(--header-font);
-  font-size: 1.8vh;
+  font-size: 1.6vh;
   color: var(--text-color);
   margin-top: 10%;
-  background-color: #faf7c4;
+  background-color: #faf7c476;
   display: inline-block;
   padding: 0.3em 0.6em;
   letter-spacing: 1px;
@@ -238,34 +238,43 @@ a:hover {
 #cta-buttons a {
   display: inline-block;
   padding: 0.8rem;
-  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   border-radius: 25px;
   transition: all 0.3s ease;
+  font-family: var(--text-font);
+  font-size: 1.7vh;
+  color: var(--text-color);
+  letter-spacing: 1px;
 }
-
 /* Demo button */
 #cta-buttons .btn-demo {
-  background-color: var(--accent-color);
+  background-color: #ff9b45;
   color: var(--main-color);
 }
 #cta-buttons .btn-demo:hover {
-  background-color: #1eb954;
+  background-color: var(--accent-color);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+#whtsapp_icon {
+  width: 22px;
+  height: 22px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
 }
 /* Register button */
 #cta-buttons .btn-register-store {
   background-color: #faf7c4;
-  color: #333;
-  border: 1px solid var(--main-color);
+  color: var(--text-color);
 }
 #cta-buttons .btn-register-store:hover {
   background-color: #f5f1a5;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+/****************************************** Mockup ************************************/
 
 /********************** Extra small devices (portrait phones, less than 576px) ****************************/
 @media (max-width: 575.98px) {
@@ -303,6 +312,10 @@ a:hover {
   .right-buttons {
     margin-left: 0;
     width: 100%;
+  }
+  /*  */
+  .btn-demo span {
+    display: none;
   }
 }
 /************************ Small devices (landscape phones, 576px and up) *****************************/
@@ -349,7 +362,7 @@ a:hover {
 
   /* hero */
   #hero {
-    height: 80vh;
+    height: 72vh;
   }
   .hero-intro {
     margin: 3px;
@@ -377,5 +390,27 @@ a:hover {
     height: 70px;
     border: 6px solid #ffffff;
     margin-right: -15px;
+  }
+  .how-simple {
+    margin-top: 1rem;
+  }
+  #hero h6 {
+    font-size: 1.6vh;
+    margin-top: 5%;
+    padding: 0.3em 0.6em;
+  }
+  #cta-buttons {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  #cta-buttons a {
+    padding: 0.6rem;
+    font-size: 1.7vh;
+    letter-spacing: 1px;
+  }
+  #whtsapp_icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 0.5rem;
   }
 }
