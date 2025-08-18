@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-x8_3_h)=s^eyiaigp40w!g-(w_racsote$2drs@k1^2@8iz*qg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['brosa.ai', '127.0.0.1', 'localhost']
+CSRF_TRUSTED_ORIGINS = [ 'https://*' ]
 
 
 # Application definition
@@ -131,3 +132,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# CORS settings
+CORS_ALLOWED_ORIGINS = ['https://brosa.ai']
+CSRF_TRUSTED_ORIGINS = ['https://brosa.ai']
