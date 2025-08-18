@@ -209,19 +209,62 @@ a:hover {
 .avatar:nth-child(4) {
   background-image: url("../images/kenkey.webp");
 }
+.how-simple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
 #hero h6 {
   font-family: var(--header-font);
   font-size: 1.8vh;
   color: var(--text-color);
-  text-align: center;
   margin-top: 10%;
+  background-color: #faf7c4;
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border-radius: 5px;
 }
 #cta-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+#cta-buttons a {
+  display: inline-block;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+/* Demo button */
+#cta-buttons .btn-demo {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+}
+#cta-buttons .btn-demo:hover {
+  background-color: #1eb954;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+/* Register button */
+#cta-buttons .btn-register-store {
+  background-color: #faf7c4;
+  color: #333;
+  border: 1px solid var(--main-color);
+}
+#cta-buttons .btn-register-store:hover {
+  background-color: #f5f1a5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /********************** Extra small devices (portrait phones, less than 576px) ****************************/
