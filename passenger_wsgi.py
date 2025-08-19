@@ -1,13 +1,15 @@
 import os
 import sys
-import django
-from django.core.wsgi import get_wsgi_application
 
-# Add project to path
-sys.path.insert(0, os.path.dirname(__file__))
 
-# Set Django settings
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'a_core.settings')
+# sys.path.insert(0, os.path.dirname(__file__))
 
-django.setup()
-application = get_wsgi_application()
+
+# def application(environ, start_response):
+#     start_response('200 OK', [('Content-Type', 'text/plain')])
+#     message = 'It works!\n'
+#     version = 'Python %s\n' % sys.version.split()[0]
+#     response = '\n'.join([message, version])
+#     return [response.encode()]
+
+from a_core.wsgi import application
