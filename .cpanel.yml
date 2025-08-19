@@ -10,8 +10,8 @@ deployment:
     # Navigate to deployment directory
     - cd $DEPLOYPATH
 
-    # Install Python dependencies using Python 3.9
-    - python3.9 -m pip install --user -r requirements.txt
+    # Install Python dependencies using Python 3.12
+    - python3.12 -m pip install --user -r requirements.txt
 
     # Create passenger_wsgi.py if it doesn't exist
     - |
@@ -31,10 +31,10 @@ deployment:
       fi
 
     # Collect static files
-    - python3.9 manage.py collectstatic --noinput --clear
+    - python3.12 manage.py collectstatic --noinput --clear
 
     # Run database migrations
-    - python3.9 manage.py migrate --noinput
+    - python3.12 manage.py migrate --noinput
 
     # Set proper permissions
     - find $DEPLOYPATH -type f -exec chmod 644 {} \;
