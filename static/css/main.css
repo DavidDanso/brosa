@@ -165,7 +165,7 @@ a:hover {
   margin-bottom: 1rem;
   text-align: center;
   font-weight: 700;
-  padding-top: 10%;
+  padding-top: 35%;
   line-height: 1.1;
 }
 #hero p {
@@ -189,8 +189,8 @@ a:hover {
   letter-spacing: 1px;
 }
 .avatar {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   border: 4px solid #ffffff;
   margin-right: -15px;
@@ -362,7 +362,7 @@ a:hover {
 
   /* hero */
   #hero {
-    height: 72vh;
+    height: 90vh;
   }
   .hero-intro {
     margin: 3px;
@@ -370,7 +370,7 @@ a:hover {
   #hero h1 {
     font-size: 8.6vh;
     margin-bottom: 2rem;
-    padding-top: 5%;
+    padding-top: 15%;
   }
   #hero p {
     font-size: 2.5vh;
@@ -386,9 +386,9 @@ a:hover {
     letter-spacing: 1px;
   }
   .avatar {
-    width: 70px;
-    height: 70px;
-    border: 6px solid #ffffff;
+    width: 65px;
+    height: 65px;
+    border: 5px solid #ffffff;
     margin-right: -15px;
   }
   .how-simple {
