@@ -329,7 +329,7 @@ a:hover {
   margin-top: 3%;
   letter-spacing: 1px;
 }
-#info p {
+#info .txt {
   font-size: 2.2vh;
   color: var(--primary-dark);
   line-height: 1.2;
@@ -337,6 +337,81 @@ a:hover {
   font-family: var(--text-font);
   font-weight: 500;
   text-align: center;
+}
+
+/*  */
+#info-row {
+  margin-top: 15%;
+}
+.badge_ {
+  background-color: #fff3cd;
+  color: var(--text-color);
+  padding: 0.3em 0.6em;
+  font-size: 1.6vh;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 8%;
+  align-items: center;
+  justify-self: center;
+  display: flex;
+}
+#info h3 {
+  font-family: var(--header-font);
+  font-size: 3.6vh;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 3%;
+  letter-spacing: 1px;
+}
+#info .txt_ {
+  font-size: 2.2vh;
+  color: var(--primary-dark);
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-family: var(--text-font);
+  font-weight: 500;
+  text-align: center;
+}
+#info li {
+  list-style: none;
+  align-items: center;
+  justify-self: center;
+  display: flex;
+  font-size: 1.9vh;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  font-family: var(--text-font);
+  margin-bottom: 2%;
+}
+#info a {
+  display: inline-block;
+  padding: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-family: var(--text-font);
+  font-size: 1.8vh;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  margin-top: 4%;
+  align-items: center;
+  justify-self: center;
+  display: flex;
+}
+#info .info_btn {
+  background-color: #ff9b45;
+  color: var(--main-color);
+}
+#info .info_btn:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /********************** Extra small devices (portrait phones, less than 576px) ****************************/
@@ -465,7 +540,7 @@ a:hover {
   }
   #hero h6 {
     font-size: 1.6vh;
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 0.3em 0.6em;
   }
   #cta-buttons {
@@ -485,7 +560,7 @@ a:hover {
 
   /* banner */
   #banner {
-    margin-top: -2%;
+    margin-top: -4%;
   }
   .banner-intro {
     margin: 3px;
@@ -496,7 +571,7 @@ a:hover {
 
   /* info */
   #info {
-    margin-top: 2%;
+    margin-top: 6%;
   }
   .info-intro {
     margin: 3px;
@@ -508,13 +583,51 @@ a:hover {
   #info h1 {
     font-size: 6.5vh;
     margin-bottom: 1rem;
-    margin-top: 2%;
+    margin-top: 1%;
   }
   #info h1 span {
     display: block;
   }
-  #info p {
+  #info .txt {
     font-size: 2.5vh;
     line-height: 1.2;
+  }
+
+  /*  */
+  #info-row {
+    margin-top: 5%;
+  }
+  .badge_ {
+    font-size: 1.6vh;
+    margin-top: 8%;
+    align-items: left;
+    justify-self: left;
+    display: inline-block;
+  }
+  #info h3 {
+    font-size: 4.6vh;
+    margin-bottom: 1rem;
+    text-align: left;
+    margin-top: 2%;
+  }
+  #info h3 span {
+    display: block;
+  }
+  #info .txt_ {
+    font-size: 2.5vh;
+    font-weight: 500;
+    text-align: left;
+  }
+  #info li {
+    align-items: left;
+    justify-self: left;
+    font-size: 2.1vh;
+    margin-bottom: 1%;
+  }
+  #info a {
+    font-size: 1.8vh;
+    margin-top: 2%;
+    align-items: left;
+    justify-self: left;
   }
 }
