@@ -13,7 +13,7 @@ body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-  background: linear-gradient(to bottom, #fff9e6, #ffe066);
+  background: linear-gradient(to bottom, #fff9e6);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
@@ -221,7 +221,7 @@ a:hover {
   font-size: 1.6vh;
   color: var(--text-color);
   margin-top: 10%;
-  background-color: #faf7c476;
+  background-color: #fff3cd;
   display: inline-block;
   padding: 0.3em 0.6em;
   letter-spacing: 1px;
@@ -274,7 +274,70 @@ a:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/****************************************** Mockup ************************************/
+/******************************** Banner-Section *************************/
+#banner {
+  margin-top: -28%;
+}
+.banner-intro {
+  background-image: url("../images/banner.avif");
+  background-size: cover;
+  background-position: center center;
+  margin: 3px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+@keyframes panImage {
+  from {
+    background-size: 110%;
+    background-position: center top;
+  }
+  to {
+    background-size: 100%;
+    background-position: center bottom;
+  }
+}
+
+/****************************************** Info ************************************/
+#info {
+  background: linear-gradient(to bottom, #fff9e6);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 10%;
+}
+.info-intro {
+  margin: 3px;
+}
+.badge {
+  display: inline-block;
+  background-color: #fff3cd;
+  color: var(--text-color);
+  padding: 0.3em 0.6em;
+  font-size: 1.6vh;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+#info h1 {
+  font-family: var(--header-font);
+  font-size: 4.6vh;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 3%;
+  letter-spacing: 1px;
+}
+#info p {
+  font-size: 2.2vh;
+  color: var(--primary-dark);
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-family: var(--text-font);
+  font-weight: 500;
+  text-align: center;
+}
 
 /********************** Extra small devices (portrait phones, less than 576px) ****************************/
 @media (max-width: 575.98px) {
@@ -316,6 +379,12 @@ a:hover {
   /*  */
   .btn-demo span {
     display: none;
+  }
+
+  /*  */
+  .banner-intro {
+    padding-top: 45%;
+    padding-bottom: 30%;
   }
 }
 /************************ Small devices (landscape phones, 576px and up) *****************************/
@@ -362,7 +431,7 @@ a:hover {
 
   /* hero */
   #hero {
-    height: 90vh;
+    height: 80vh;
   }
   .hero-intro {
     margin: 3px;
@@ -370,7 +439,7 @@ a:hover {
   #hero h1 {
     font-size: 8.6vh;
     margin-bottom: 2rem;
-    padding-top: 15%;
+    padding-top: 10%;
   }
   #hero p {
     font-size: 2.5vh;
@@ -412,5 +481,40 @@ a:hover {
     width: 22px;
     height: 22px;
     margin-left: 0.5rem;
+  }
+
+  /* banner */
+  #banner {
+    margin-top: -2%;
+  }
+  .banner-intro {
+    margin: 3px;
+    background-size: 110%;
+    height: 700px;
+    animation: panImage 20s linear infinite alternate;
+  }
+
+  /* info */
+  #info {
+    margin-top: 2%;
+  }
+  .info-intro {
+    margin: 3px;
+  }
+  .badge {
+    padding: 0.3em 0.6em;
+    font-size: 1.6vh;
+  }
+  #info h1 {
+    font-size: 6.5vh;
+    margin-bottom: 1rem;
+    margin-top: 2%;
+  }
+  #info h1 span {
+    display: block;
+  }
+  #info p {
+    font-size: 2.5vh;
+    line-height: 1.2;
   }
 }
