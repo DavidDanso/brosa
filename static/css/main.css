@@ -344,6 +344,7 @@ a:hover {
   margin-top: 15%;
 }
 .badge_ {
+  display: inline-block;
   background-color: #fff3cd;
   color: var(--text-color);
   padding: 0.3em 0.6em;
@@ -353,16 +354,12 @@ a:hover {
   text-transform: uppercase;
   border-radius: 5px;
   margin-top: 8%;
-  align-items: center;
-  justify-self: center;
-  display: flex;
 }
 #info h3 {
   font-family: var(--header-font);
   font-size: 3.6vh;
   color: var(--text-color);
   margin-bottom: 1rem;
-  text-align: center;
   font-weight: 600;
   line-height: 1;
   margin-top: 3%;
@@ -375,13 +372,9 @@ a:hover {
   letter-spacing: 1px;
   font-family: var(--text-font);
   font-weight: 500;
-  text-align: center;
 }
 #info li {
   list-style: none;
-  align-items: center;
-  justify-self: center;
-  display: flex;
   font-size: 1.9vh;
   color: var(--text-color);
   letter-spacing: 1px;
@@ -400,9 +393,6 @@ a:hover {
   color: var(--text-color);
   letter-spacing: 1px;
   margin-top: 4%;
-  align-items: center;
-  justify-self: center;
-  display: flex;
 }
 #info .info_btn {
   background-color: #ff9b45;
@@ -412,6 +402,102 @@ a:hover {
   background-color: var(--accent-color);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/****************************************** About-Us ************************************/
+#about_us {
+  background: linear-gradient(to bottom, #ffe066);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 4%;
+}
+.about-intro {
+  margin: 3px;
+}
+#about_us .badge {
+  display: inline-block;
+  background-color: #fff3cd;
+  color: var(--text-color);
+  padding: 0.3em 0.6em;
+  font-size: 1.6vh;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+#about_us h1 {
+  font-family: var(--header-font);
+  font-size: 3.6vh;
+  color: var(--text-color);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 3%;
+  letter-spacing: 1px;
+  margin-bottom: 1%;
+}
+#about_us p {
+  font-size: 2.2vh;
+  color: var(--primary-dark);
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-family: var(--text-font);
+  font-weight: 500;
+  text-align: center;
+}
+
+/*  */
+#about-row {
+  margin-top: 5%;
+}
+#about-row .col-md-4 {
+  margin-bottom: 2%;
+}
+.feature-card {
+  background: #fff9e6;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+.feature-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fdd835;
+  margin: 0 auto 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.feature-avatar img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 2.3vh;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 3%;
+  line-height: 1.1;
+  font-family: var(--header-font);
+  letter-spacing: 1px;
+}
+.feature-description {
+  font-size: 1.6vh;
+  color: var(--primary-dark);
+  line-height: 1.2;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 /********************** Extra small devices (portrait phones, less than 576px) ****************************/
@@ -600,9 +686,6 @@ a:hover {
   .badge_ {
     font-size: 1.6vh;
     margin-top: 8%;
-    align-items: left;
-    justify-self: left;
-    display: inline-block;
   }
   #info h3 {
     font-size: 4.6vh;
@@ -616,18 +699,67 @@ a:hover {
   #info .txt_ {
     font-size: 2.5vh;
     font-weight: 500;
-    text-align: left;
   }
   #info li {
-    align-items: left;
-    justify-self: left;
     font-size: 2.1vh;
     margin-bottom: 1%;
   }
   #info a {
     font-size: 1.8vh;
     margin-top: 2%;
-    align-items: left;
-    justify-self: left;
+  }
+
+  /* about-us */
+  #about_us {
+    padding: 1%;
+  }
+  #about_us .badge {
+    font-size: 1.5vh;
+  }
+  #about_us h1 {
+    font-size: 5.6vh;
+    margin-top: 1%;
+    margin-bottom: 3px;
+  }
+  #about_us p {
+    font-size: 2.5vh;
+    line-height: 1.2;
+  }
+  #about_us p span {
+    display: block;
+  }
+
+  /*  */
+  #about-row {
+    margin-top: 2%;
+  }
+  #about-row .col-md-4 {
+    margin-bottom: 1%;
+  }
+  .feature-card {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 120px;
+  }
+  .feature-avatar {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 8px;
+  }
+  .feature-avatar img {
+    width: 70%;
+    height: 70%;
+  }
+  .feature-title {
+    font-size: 2.3vh;
+    margin-bottom: 3%;
+    line-height: 1.1;
+  }
+  .feature-description {
+    font-size: 1.5vh;
+    line-height: 1.2;
+    margin-top: 4%;
   }
 }
