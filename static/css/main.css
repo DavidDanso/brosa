@@ -500,6 +500,119 @@ a:hover {
   font-weight: 500;
 }
 
+/****************************************** orders ************************************/
+#orders {
+  margin-top: 6%;
+}
+.orders-intro {
+  margin: 3px;
+}
+.orders-intro h1 {
+  font-size: 3vh;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 3%;
+  line-height: 1.1;
+  font-family: var(--header-font);
+  letter-spacing: 1px;
+  text-align: center;
+}
+.orders-intro p {
+  font-size: 2.2vh;
+  color: var(--primary-dark);
+  line-height: 1.2;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: center;
+}
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.category-button {
+  background: transparent;
+  border: 1px solid #0f513285;
+  border-radius: 50px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  gap: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+  min-height: 48px;
+}
+.category-button:hover {
+  background: #0f5132;
+  color: white;
+  border-color: #0f5132;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(15, 81, 50, 0.2);
+}
+.category-button.active {
+  background: #0f5132;
+  color: white;
+  border-color: #0f5132;
+}
+.category-icon {
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Animation for category buttons */
+.category-button {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Stagger animation delays */
+.category-button:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.category-button:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.category-button:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.category-button:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.category-button:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.category-button:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.category-button:nth-child(7) {
+  animation-delay: 0.7s;
+}
+#orders_img {
+  width: 60%;
+  height: auto;
+  margin-top: 4%;
+}
+
 /********************** Extra small devices (portrait phones, less than 576px) ****************************/
 @media (max-width: 575.98px) {
   .navbar-nav.center-nav {
@@ -761,5 +874,39 @@ a:hover {
     font-size: 1.5vh;
     line-height: 1.2;
     margin-top: 4%;
+  }
+
+  /* orders */
+  #orders {
+    margin-top: 3%;
+  }
+  .orders-intro {
+    margin: 3px;
+  }
+  .orders-intro h1 {
+    font-size: 5vh;
+    margin-bottom: 1%;
+  }
+  .orders-intro p {
+    font-size: 2.4vh;
+    margin-bottom: 2%;
+  }
+  .categories-container {
+    gap: 20px;
+  }
+  .category-button {
+    padding: 12px 24px;
+    font-size: 1.8vh;
+    gap: 4px;
+    min-height: 48px;
+  }
+  .category-icon {
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+  }
+  #orders_img {
+    width: 20%;
+    margin-top: 2%;
   }
 }
