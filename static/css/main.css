@@ -841,12 +841,16 @@ footer {
   }
   #hero h1 {
     font-size: 8.6vh;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding-top: 10%;
   }
   #hero p {
     font-size: 2.5vh;
     line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  #hero p span {
+    display: block;
   }
   #check_icon {
     width: 20px;
